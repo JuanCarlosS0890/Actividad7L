@@ -1,0 +1,32 @@
+<head>
+    <link rel="stylesheet" href="recover.component.css">
+  </head>
+  <body class="fondo">
+      <h1 class="saludo">Bienvenido a Altair</h1>
+      <h1 class="saludo">ingrese la informacion</h1>
+     <div class="entorno">
+        <div>
+          <div class="letreros">
+            <label for="usuario">Usuario</label>
+            <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+          </div>
+          <div class="letreros">
+              <label for="Email">Email</label>
+              <input type="text" class="form-control" id="email" placeholder="Email">
+            </div>
+          <div class="letreros">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Password">
+          </div>
+          <div class="letreros">
+              <label for="password">Confirmar Password</label>
+            <input type="password" class="form-control" id="password" placeholder="Confirmar Password">
+          </div>
+          <button type="submit" class="boton" (click)="enviar()">Enviar</button>
+          </div>
+          <label class="contacto" routerLink="/contacto">Contacto</label>
+      </div>
+      <script>
+        src="./recover.component.ts"
+      </script>
+    </body>

@@ -1,0 +1,29 @@
+<head>
+    <link rel="stylesheet" href="login.component.css">
+  </head>
+  <body class="fondo">
+    <div class="saludo">Bienvenido a Altair</div>
+   <div class="entorno">
+      <div>
+        <div class="letreros">
+          <label for="usuario">Usuario</label>
+          <input type="text" class="form-control" id="usuario" placeholder="Usuario">
+        </div>
+        <div class="letreros">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <div class="letreros">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+            <label class="form-check-label" for="dropdownCheck2">
+              Recordar usuario
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="boton" (click)="iniciar()">Ingresar</button>
+        </div>
+        <label class="recuperacion" routerLink="/recover">Recuperar contraseña</label>
+    </div>
+    <script>src="./login.component.ts"</script>
+  </body>
